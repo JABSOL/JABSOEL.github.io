@@ -5,9 +5,8 @@
 
 header {
   position: relative;
-  left: 30px;
-  border: 3px solid #5204aa;
-  font-size: x-large;
+  left: -700px;
+  font-size: 80;
   colour: rgb(0, 0, 0);
   font-family: 'emizen', sans-serif; 
 }
