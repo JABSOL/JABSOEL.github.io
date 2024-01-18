@@ -1,3 +1,8 @@
+header {@font-face {
+  font-family:Emizen ;
+  src: url('Emizen.ttf');
+}}
+
 body {
   background-color: black;
   color: white;
