@@ -1,7 +1,7 @@
 @font-face {
   font-family:Emizen ;
-  src: url('Emizen.ttf');}
-  
+  src: local('Emizen.ttf');}
+
 header {
   font-family: Emizen;
 }
