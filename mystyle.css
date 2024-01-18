@@ -1,7 +1,10 @@
-header {@font-face {
+@font-face {
   font-family:Emizen ;
-  src: url('Emizen.ttf');
-}}
+  src: url('Emizen.ttf');}
+  
+header {
+  font-family: Emizen;
+}
 
 body {
   background-color: black;
