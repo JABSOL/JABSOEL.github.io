@@ -4,8 +4,7 @@
 }
 
 header {
-  position: relative;
-  left: -700px;
+  text-align: center;
   font-size: 80;
   colour: rgb(0, 0, 0);
   font-family: 'emizen', sans-serif; 
