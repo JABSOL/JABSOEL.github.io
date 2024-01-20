@@ -6,7 +6,7 @@
 header {
   text-align: left;
   font-size: 80;
-  colour: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-family: 'emizen', sans-serif; 
 }
 
@@ -20,3 +20,22 @@ h1 {
   margin-left: 20px;
   color: white;
 }
+
+.container {  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1fr;
+  grid-template-rows: 0.4fr 2.3fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Top Top Top"
+    "Sidebar Main Main"
+    "Bottom Bottom Bottom";
+}
+
+.Top { grid-area: Top; }
+
+.Sidebar { grid-area: Sidebar; }
+
+.Main { grid-area: Main; }
+
+.Bottom { grid-area: Bottom; }
