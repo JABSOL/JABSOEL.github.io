@@ -41,7 +41,7 @@ a:link, a:visited, a:hover {
   color: rgb(0, 255, 162);
   border: 2px solid rgb(255, 0, 204);
   padding: 10px 20px;
-  text-align: left;
+  text-align: center;
   display: block; 
   font-family: 'emizen', sans-serif;
   text-decoration: none; 
