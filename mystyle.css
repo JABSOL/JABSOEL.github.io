@@ -30,8 +30,18 @@ body {
 
 .Top { grid-area: Top; }
 
-.Sidebar { grid-area: Sidebar; }
-
+.Sidebar a {
+  grid-area: Sidebar;
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 255, 162);
+  border: 2px solid rgb(255, 0, 204);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: block;
+  font-family: 'emizen', sans-serif;
+  text-decoration: none;
+}
 
 .Main { grid-area: Main; }
 
