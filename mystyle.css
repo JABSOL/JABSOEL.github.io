@@ -5,9 +5,9 @@
 
 header {
   text-align: left;
-  font-size: 80;
-  color: rgb(255, 255, 255);
-  font-family: 'emizen', sans-serif; 
+  font-size: 80px;
+  color: white;
+  font-family: 'emizen', sans-serif;
 }
 
 body {
@@ -21,7 +21,8 @@ h1 {
   color: white;
 }
 
-.container {  display: grid;
+.container {
+  display: grid;
   grid-template-columns: 0.7fr 1.3fr 1fr;
   grid-template-rows: 0.4fr 2.3fr 0.3fr;
   gap: 0px 0px;
@@ -40,7 +41,7 @@ h1 {
 
 .Bottom { grid-area: Bottom; }
 
-a:link, a:visited {
+a:link, a:visited, a:hover {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 255, 162);
   border: 2px solid rgb(255, 0, 204);
@@ -48,4 +49,5 @@ a:link, a:visited {
   text-align: center;
   display: inline-block;
   font-family: 'emizen', sans-serif;
+  text-decoration: none; /* Entfernt die Standard-Link-Unterstreichung */
 }
