@@ -47,8 +47,19 @@ body {
 
 .Bottom { grid-area: Bottom; }
 
-a:link, a:visited, a:hover {
+a:link, a:visited{
   background-color: rgb(0, 0, 0);
+  color: rgb(0, 255, 162);
+  border: 2px solid rgb(255, 0, 204);
+  padding: 10px 20px;
+  margin-top: 10px; 
+  text-align: center;
+  display: block; 
+  font-family: 'emizen', sans-serif;
+  text-decoration: none; 
+}
+
+a:hover{  background-color: rgb(83, 0, 184);
   color: rgb(0, 255, 162);
   border: 2px solid rgb(255, 0, 204);
   padding: 10px 20px;
