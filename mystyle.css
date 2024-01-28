@@ -11,6 +11,8 @@ header {
 }
 
 body {
+  body {background: black;}
+            canvas {display:block;}
   background-color: black;
   color: white;
   text-align: left;
