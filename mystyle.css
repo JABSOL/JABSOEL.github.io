@@ -34,7 +34,7 @@ body {
 
 .Sidebar a {
   grid-area: Sidebar;
-  box-shadow: inset 0 0 0 0 #51d0ff;
+  box-shadow: inset 0 0 0 0 #52d1ff;
   margin: 0 -.25rem;
   padding: 0 .25rem;
   transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
