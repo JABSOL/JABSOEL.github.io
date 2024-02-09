@@ -97,6 +97,7 @@ body {
 /* Main-Stil */
 .Main {
   grid-area: Main;
+  font-size: 80px;
 }
 
 /* Bottom-Stil */
