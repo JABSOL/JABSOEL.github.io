@@ -1,6 +1,12 @@
 body {
   margin: 0;
+  font-size: 18px;
   background-color: #000;
+}
+.Main a {
+  display: inline-block; 
+  width: auto;
+  max-width: 100%; 
 }
 
 .container {
@@ -148,6 +154,6 @@ th {
   color: rgb(0, 255, 162);
 }
 html, body {
-  overflow: hidden;
+  overflow: scroll;
 }
 
