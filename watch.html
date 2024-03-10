@@ -1,11 +1,13 @@
-
-<html>
-  <link rel="stylesheet" href="mystyle.css">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stopp Uhr</title>
-
+  <link rel="stylesheet" href="rain.css">
 </head>
 <body>
+  <canvas id='canv'></canvas>
   <div class="container">
     <div class="Top">
       <header>
@@ -13,68 +15,61 @@
       </header>
     </div>
     <div class="Sidebar">
-      <a href="tags.html"effect="ripple">Tags</a><br><br>
-      <a href="about.html"effect="ripple">About</a> <br><br>
-      <a href="comment.html"effect="ripple">Comment</a> <br><br>
-      <a href="woodcutter.html"effect="ripple">My Game</a>
+      <a href="tags.html" effect="ripple">Tags</a><br><br>
+      <a href="about.html" effect="ripple">About</a> <br><br>
+      <a href="comment.html" effect="ripple">Comment</a> <br><br>
+      <a href="woodcutter.html" effect="ripple">My Game</a> <br><br>
+      <a href="aitools.html" effect="ripple">AI Tools</a>
     </div>
     <div class="Main">
-      
-    </div><body>
-
       <h2>Countdown Timer</h2>
-      
-      <div id="timer">00:00:00</div>
+      <div id="timer">00:00:000</div>
       <button onclick="startTimer()">Start</button>
       <button onclick="stopTimer()">Stop</button>
       <button onclick="resetTimer()">Reset</button>
-      
-      <script>
-        let timerInterval;
-        let seconds = 0;
-        let minutes = 0;
-        let hours = 0;
-      
-        function startTimer() {
-          timerInterval = setInterval(updateTimer, 1000);
-        }
-      
-        function stopTimer() {
-          clearInterval(timerInterval);
-        }
-      
-        function resetTimer() {
-          stopTimer();
-          seconds = -1;
-          minutes = 0;
-          hours = 0;
-          updateTimer();
-        }
-      
-        function updateTimer() {
-          seconds++;
-      
-          if (seconds === 60) {
-            seconds = 0;
-            minutes++;
-      
-            if (minutes === 60) {
-              minutes = 0;
-              hours++;
-            }
-          }
-      
-          const formattedTime = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-          document.getElementById('timer').innerText = formattedTime;
-        }
-      
-        function pad(value) {
-          return value < 10 ? '0' + value : value;
-        }
-      </script>
+    </div>
     <div class="Bottom"></div>
   </div>
+  <script>
+    let timerInterval;
+    let startTime;
+    let elapsedTime = 0;
+  
+    function startTimer() {
+      startTime = Date.now() - elapsedTime;
+      timerInterval = setInterval(updateTimer, 1); // Update every millisecond
+    }
+  
+    function stopTimer() {
+      clearInterval(timerInterval);
+      elapsedTime = Date.now() - startTime;
+    }
+  
+    function resetTimer() {
+      clearInterval(timerInterval);
+      elapsedTime = 0;
+      updateTimer();
+    }
+  
+    function updateTimer() {
+      const currentTime = Date.now();
+      const millisecondDiff = currentTime - startTime;
+      const hours = Math.floor(millisecondDiff / (1000 * 60 * 60));
+      const minutes = Math.floor((millisecondDiff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((millisecondDiff % (1000 * 60)) / 1000);
+      const milliseconds = Math.floor((millisecondDiff % 1000));
+
+      const formattedTime = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}:${pad(milliseconds, true)}`;
+      document.getElementById('timer').innerText = formattedTime;
+    }
+  
+    function pad(value, isMilliseconds = false) {
+      if (isMilliseconds) {
+        return value < 10 ? '00' + value : value < 100 ? '0' + value : value;
+      }
+      return value < 10 ? '0' + value : value;
+    }
+  </script>
+  <script src="rain.js"></script>
 </body>
-
-
-
+</html>

@@ -1,4 +1,3 @@
-// https://github.com/BaseMax/RippleEffectCSS
 document.querySelectorAll(`[effect="ripple"]`).forEach(el => {
     el.addEventListener('click', e => {
         e = e.touches ? e.touches[0] : e;
@@ -9,5 +8,3 @@ document.querySelectorAll(`[effect="ripple"]`).forEach(el => {
         el.style.cssText = `--t: 1; --o: 0; --d: ${d}; --x:${e.clientX - r.left}; --y:${e.clientY - r.top};`;
     });
 });
-
-

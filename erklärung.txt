@@ -1,0 +1,12 @@
+Startseite: index.html
+Header: Der Titel der Website lautet “Jans Coding”.
+Sidebar: Hier gibt es Links zu verschiedenen Seiten wie “Tags”, “About”, “Watch” und “My Game”.
+Main: In diesem Bereich wird der Hauptinhalt angezeigt.
+
+Tags: Hier findet man eine LISTE mit verschieden Html Tags
+About: Hier findet man Informationen über mich
+Watch: Dies war ein kleines Projekt wo ich mithilfe von Tutorials eine Uhr in Html nachgebaut habe
+My Game: Hier habe ich mithilfe von iFrame mein eigenes Spiel in die Website eingebaut
+
+emizen.tff: Die Font die genutzt wird für Titel und Setenleiste
+rain.css ist die Haupt css datei die für das Design genutzt wird
