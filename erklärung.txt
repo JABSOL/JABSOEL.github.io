@@ -9,4 +9,4 @@ Watch: Dies war ein kleines Projekt wo ich mithilfe von Tutorials eine Uhr in Ht
 My Game: Hier habe ich mithilfe von iFrame mein eigenes Spiel in die Website eingebaut
 
 emizen.tff: Die Font die genutzt wird für Titel und Setenleiste
-rain.css ist die Haupt css datei die für das Design genutzt wird
+rain.css: Haupt CSS Datei die für das Design genutzt wird

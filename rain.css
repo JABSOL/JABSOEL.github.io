@@ -171,7 +171,7 @@ html, body {
 
 .icon-link {
   display: flex;
-  align-items: left; /* Zentriere die Elemente vertikal */
+  align-items: left; 
   text-decoration: none; /* Entferne Unterstreichung für Links */
 }
 
@@ -183,4 +183,24 @@ html, body {
 
 .icon-text {
   font-size: 80px; /* Passe die Schriftgröße des Textes an */
+  z-index: 1;
+}
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+#demo {
+  font-family: 'emizen', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+#timer {
+  font-family: 'emizen', sans-serif;
+  font-size: 50px;
+  text-align: center;
 }
